@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For My Ultimate Bestie, Aastha Ji</title>
+  <title>For My Dearest Aastha Ji</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Patrick+Hand&display=swap');
     
@@ -23,12 +23,6 @@
       align-items: center;
       position: relative;
       cursor: url('https://img.icons8.com/doodle/24/000000/heart.png'), auto;
-      transition: background 0.5s ease;
-    }
-    
-    body.dark-mode {
-      background: linear-gradient(135deg, #2c1b47, #5e3a6f);
-      color: #ffd1dc;
     }
     
     .floating-heart {
@@ -57,11 +51,6 @@
       padding: 15px 25px;
       border-radius: 35px;
       box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
-      transition: background 0.5s ease;
-    }
-    
-    body.dark-mode .music-controls {
-      background: rgba(44, 27, 71, 0.9);
     }
     
     .music-controls button {
@@ -93,11 +82,6 @@
       text-overflow: ellipsis;
     }
     
-    body.dark-mode .music-info {
-      color: #ffd1dc;
-      text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.2);
-    }
-    
     .playlist-select {
       background: #ffccd5;
       border: 2px solid #ff99cc;
@@ -112,33 +96,9 @@
       max-width: 250px;
     }
     
-    body.dark-mode .playlist-select {
-      background: #5e3a6f;
-      border-color: #ffd1dc;
-      color: #ffd1dc;
-    }
-    
     .playlist-select:hover {
       background: #ff99cc;
       color: white;
-    }
-    
-    .theme-toggle {
-      background: #ff66b2;
-      border: none;
-      color: white;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 20px;
-      box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
-      transition: all 0.3s ease;
-    }
-    
-    .theme-toggle:hover {
-      background: #ff99cc;
-      transform: scale(1.1);
     }
     
     .book-container {
@@ -177,12 +137,7 @@
       text-align: center;
       backface-visibility: hidden;
       transform-style: preserve-3d;
-      transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), background 0.5s ease;
-    }
-    
-    body.dark-mode .page {
-      background: linear-gradient(to right, #3a2457, #5e3a6f);
-      border-color: #ffd1dc;
+      transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
     
     .page::after {
@@ -195,10 +150,6 @@
       background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10zm20 20c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm-40 20c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5 5zm20-40c2.209 0 4 1.791 4 4s-1.791 4-4 4-4-1.791-4-4 1.791-4 4-4z' fill='%23ffb6c1' fill-opacity='0.2'/%3E%3C/svg%3E");
       opacity: 0.4;
       pointer-events: none;
-    }
-    
-    body.dark-mode .page::after {
-      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10zm20 20c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm-40 20c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5 5zm20-40c2.209 0 4 1.791 4 4s-1.791 4-4 4-4-1.791-4-4 1.791-4 4-4z' fill='%23ffd1dc' fill-opacity='0.2'/%3E%3C/svg%3E");
     }
     
     .page-1 { z-index: 13; background: linear-gradient(135deg, #ffe6ee, #fff0f5); }
@@ -233,10 +184,6 @@
       transition: all 0.3s ease;
     }
     
-    body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
-      color: #ffd1dc;
-    }
-    
     h1:hover, h2:hover, h3:hover {
       text-shadow: 0 0 10px #ff99cc, 2px 2px 4px rgba(255, 105, 180, 0.5);
     }
@@ -250,11 +197,6 @@
       color: #ff528b;
       margin-bottom: 20px;
       text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.2);
-      transition: color 0.3s ease;
-    }
-    
-    body.dark-mode p {
-      color: #ffd1dc;
     }
     
     .typewriter {
@@ -262,10 +204,6 @@
       white-space: nowrap;
       animation: typing 2.5s steps(40, end), blink 0.75s step-end infinite;
       border-right: 3px solid #ff99cc;
-    }
-    
-    body.dark-mode .typewriter {
-      border-right-color: #ffd1dc;
     }
     
     @keyframes typing {
@@ -276,10 +214,6 @@
     @keyframes blink {
       from, to { border-color: transparent }
       50% { border-color: #ff99cc }
-    }
-    
-    body.dark-mode @keyframes blink {
-      50% { border-color: #ffd1dc }
     }
     
     .nav-buttons {
@@ -306,19 +240,9 @@
       align-items: center;
     }
     
-    body.dark-mode .nav-button {
-      background: #5e3a6f;
-      border-color: #ffd1dc;
-    }
-    
     .nav-button:hover {
       background: #ff66b2;
       transform: scale(1.15) rotate(5deg);
-    }
-    
-    body.dark-mode .nav-button:hover {
-      background: #ffd1dc;
-      color: #2c1b47;
     }
     
     .sticker {
@@ -360,11 +284,6 @@
       text-align: center;
     }
     
-    body.dark-mode .memory-card {
-      background: #3a2457;
-      border-color: #ffd1dc;
-    }
-    
     .memory-card:hover {
       transform: rotate(0deg) scale(1.05);
       box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
@@ -386,10 +305,6 @@
       left: var(--left);
       z-index: 3;
       border-radius: 5px;
-    }
-    
-    body.dark-mode .tape {
-      background: rgba(255, 209, 220, 0.8);
     }
     
     .doodle {
@@ -420,10 +335,6 @@
       animation: shimmer 4s infinite;
     }
     
-    body.dark-mode .shine-effect {
-      background: linear-gradient(135deg, rgba(255,209,220,0.3) 0%, rgba(255,209,220,0) 60%);
-    }
-    
     @keyframes shimmer {
       0% { transform: translateX(-100%); }
       50% { transform: translateX(100%); }
@@ -446,19 +357,14 @@
     .magic-button {
       background: #ff66b2;
       border: none;
-      padding: 12px 24px;
-      border-radius: 25px;
+      padding: 10px 20px;
+      border-radius: 20px;
       color: white;
       font-family: 'Caveat', cursive;
-      font-size: 1.6em;
+      font-size: 1.5em;
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
       transition: all 0.3s ease;
-    }
-    
-    body.dark-mode .magic-button {
-      background: #ffd1dc;
-      color: #2c1b47;
     }
     
     .magic-button:hover {
@@ -466,27 +372,16 @@
       transform: scale(1.1);
     }
     
-    body.dark-mode .magic-button:hover {
-      background: #ff99cc;
-    }
-    
     .surprise-message {
       position: absolute;
       background: #ff99cc;
       color: white;
-      padding: 15px 25px;
+      padding: 15px;
       border-radius: 15px;
       font-size: 1.8em;
-      font-family: 'Caveat', cursive;
       display: none;
       animation: popIn 0.5s ease;
       z-index: 6;
-      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
-    }
-    
-    body.dark-mode .surprise-message {
-      background: #5e3a6f;
-      color: #ffd1dc;
     }
     
     @keyframes popIn {
@@ -504,11 +399,6 @@
       text-shadow: 0 0 10px #ff99cc;
       animation: crownGlow 2s ease infinite;
       z-index: 3;
-    }
-    
-    body.dark-mode .love-crown {
-      color: #ffd1dc;
-      text-shadow: 0 0 10px #ff99cc;
     }
     
     @keyframes crownGlow {
@@ -530,21 +420,15 @@
     }
     
     .love-meter {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       background: #fff7f9;
-      border: 4px solid #ff99cc;
+      border: 3px solid #ff99cc;
       border-radius: 50%;
       position: relative;
       cursor: pointer;
       overflow: hidden;
       margin: 20px auto;
-      transition: background 0.3s ease;
-    }
-    
-    body.dark-mode .love-meter {
-      background: #3a2457;
-      border-color: #ffd1dc;
     }
     
     .love-meter-fill {
@@ -555,10 +439,6 @@
       height: 0%;
       background: #ff66b2;
       transition: height 0.5s ease;
-    }
-    
-    body.dark-mode .love-meter-fill {
-      background: #ffd1dc;
     }
     
     .love-meter span {
@@ -582,13 +462,6 @@
       color: #ff528b;
       resize: none;
       box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
-    
-    body.dark-mode .note-area {
-      background: #3a2457;
-      border-color: #ffd1dc;
-      color: #ffd1dc;
     }
     
     .note-area:focus {
@@ -596,27 +469,18 @@
       border-color: #ff66b2;
     }
     
-    body.dark-mode .note-area:focus {
-      border-color: #ff99cc;
-    }
-    
-    /* Enhanced Photo Frame */
+    /* New Styles */
     .photo-frame {
-      width: 250px;
-      height: 180px;
-      border: 8px solid #ffb6c1;
+      width: 200px;
+      height: 150px;
+      border: 5px solid #ffb6c1;
       background: #fff;
       box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
       transform: rotate(-5deg);
       cursor: pointer;
       overflow: hidden;
       position: relative;
-      transition: all 0.3s ease;
-    }
-    
-    body.dark-mode .photo-frame {
-      background: #5e3a6f;
-      border-color: #ffd1dc;
+      transition: transform 0.3s ease;
     }
     
     .photo-frame:hover {
@@ -628,12 +492,6 @@
       height: 100%;
       object-fit: cover;
       display: none;
-      animation: photoFadeIn 0.5s ease;
-    }
-    
-    @keyframes photoFadeIn {
-      0% { opacity: 0; transform: scale(0.9); }
-      100% { opacity: 1; transform: scale(1); }
     }
     
     .photo-frame::before {
@@ -643,88 +501,32 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Caveat', cursive;
-      font-size: 1.8em;
+      font-size: 1.5em;
       color: #ff66b2;
       text-align: center;
     }
     
-    body.dark-mode .photo-frame::before {
-      color: #ffd1dc;
-    }
-    
-    .photo-caption {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-family: 'Patrick Hand', cursive;
-      font-size: 1.2em;
-      color: #ff528b;
-      background: rgba(255, 245, 247, 0.8);
-      padding: 5px 10px;
-      border-radius: 10px;
-      display: none;
-    }
-    
-    body.dark-mode .photo-caption {
-      color: #ffd1dc;
-      background: rgba(44, 27, 71, 0.8);
-    }
-    
-    /* Supercharged Friendship Badge */
     .friendship-badge {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       background: #ff99cc;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Caveat', cursive;
-      font-size: 2em;
+      font-size: 1.8em;
       color: white;
       text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
-      position: relative;
-      transition: all 0.3s ease;
-    }
-    
-    body.dark-mode .friendship-badge {
-      background: #ffd1dc;
-      color: #2c1b47;
+      transition: transform 0.3s ease;
     }
     
     .friendship-badge:hover {
       transform: scale(1.1);
     }
     
-    .friendship-badge.awarded {
-      box-shadow: 0 0 20px #ff99cc, 0 5px 15px rgba(255, 105, 180, 0.4);
-    }
-    
-    .friendship-badge::after {
-      content: '';
-      position: absolute;
-      width: 140px;
-      height: 20px;
-      background: linear-gradient(45deg, #ff66b2, #ff99cc);
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 5px;
-      display: none;
-    }
-    
-    body.dark-mode .friendship-badge::after {
-      background: linear-gradient(45deg, #ffd1dc, #ff99cc);
-    }
-    
-    .friendship-badge.awarded::after {
-      display: block;
-    }
-    
-    /* Expanded Memory Ticker */
     .memory-ticker {
       position: absolute;
       bottom: 10px;
@@ -734,16 +536,7 @@
       font-family: 'Patrick Hand', cursive;
       font-size: 1.2em;
       color: #ff528b;
-      animation: ticker 20s linear infinite;
-      cursor: pointer;
-    }
-    
-    body.dark-mode .memory-ticker {
-      color: #ffd1dc;
-    }
-    
-    .memory-ticker.paused {
-      animation-play-state: paused;
+      animation: ticker 15s linear infinite;
     }
     
     @keyframes ticker {
@@ -757,10 +550,9 @@
       h1 { font-size: 2.5em; }
       h2 { font-size: 2em; }
       p { font-size: 1.4em; }
-      .photo-frame { width: 180px; height: 120px; }
-      .friendship-badge { width: 90px; height: 90px; font-size: 1.6em; }
+      .photo-frame { width: 150px; height: 100px; }
+      .friendship-badge { width: 80px; height: 80px; font-size: 1.5em; }
       .memory-ticker { font-size: 1em; }
-      .love-meter { width: 90px; height: 90px; }
     }
   </style>
 </head>
@@ -782,7 +574,6 @@
       <option value="Backstreet Boys - I Want It That Way (Official HD Video).mp3">I Want It That Way - Backstreet Boys</option>
     </select>
     <div class="music-info" id="current-song">WUSYANAME - Tyler, The Creator</div>
-    <button class="theme-toggle" id="themeToggle">🌙</button>
   </div>
   
   <div class="book-container">
@@ -792,13 +583,13 @@
         <div class="shine-effect"></div>
         <div class="page-content">
           <h1 class="typewriter">My Dearest Aastha Ji!</h1>
-          <p>The ultimate scrapbook from your bestie—‘cause you’re my rock!</p>
+          <p>A little scrapbook from your bestie—‘cause you’re my rock!</p>
           <div class="memory-card">
             <span>💖</span>
-            <p>You’ve been my anchor when the world turned upside down!</p>
+            <p>You’ve been there when my world flipped upside down!</p>
           </div>
           <button class="magic-button" id="magicSurprise">Sweet Surprise!</button>
-          <p>(Flip for epic thanks—click for stickers!)</p>
+          <p>(Flip for more thanks—click for stickers!)</p>
         </div>
         <span class="sticker" style="top: 20px; right: 30px;">💕</span>
         <span class="sticker" style="bottom: 50px; left: 40px;">🌸</span>
@@ -810,7 +601,7 @@
         <div class="page-content">
           <h2>My Anchor</h2>
           <p>Hey Aastha Ji!</p>
-          <p>When life crashed hard, you stood like a rock—my lifeline!</p>
+          <p>When everything crashed, you stood solid as a rock—my lifeline!</p>
           <p>Thanks for being my unbreakable bestie!</p>
           <img class="doodle doodle-heart" src="https://img.icons8.com/doodle/96/heart.png" alt="heart">
         </div>
@@ -824,7 +615,7 @@
           <h2>You Pulled Me Through</h2>
           <div class="memory-card" style="transform: rotate(4deg);">
             <span>🌟</span>
-            <p>You said “We’ve got this!” and hauled me out of the dark—my hero!</p>
+            <p>You said “We’ve got this!” and dragged me out of the dark—my hero!</p>
           </div>
           <p>You’re my strength, Aastha Ji!</p>
           <img class="doodle doodle-star" src="https://img.icons8.com/doodle/96/star.png" alt="star">
@@ -836,9 +627,9 @@
       <div class="page page-4">
         <div class="page-content">
           <h2>My Motivation Spark</h2>
-          <p>Aastha Ji, your words ignite a fire in me—I’m so lucky you’re my bestie!</p>
-          <p>You make me wanna push forward every single day!</p>
-          <p>Thanks for that endless boost!</p>
+          <p>Aastha Ji, your words light a fire under me—I’m so lucky you’re my bestie!</p>
+          <p>You make me wanna keep going every day!</p>
+          <p>Thanks for that push you always give!</p>
           <img class="doodle doodle-flower" src="https://img.icons8.com/doodle/96/flower.png" alt="flower">
           <span class="surprise-message" id="secretMessage" style="top: 20%; left: 50%; transform: translateX(-50%);">Psst... you’re my rock of strength! ✨</span>
         </div>
@@ -860,17 +651,16 @@
         <span class="sticker" style="top: 140px; left: 30px;">💝</span>
       </div>
       
-      <!-- Page 6 (Love Meter + Voice Message) -->
+      <!-- Page 6 (Love Meter) -->
       <div class="page page-6">
         <div class="page-content">
           <h2>You Keep Me Going</h2>
-          <p>Aastha Ji, your pep talks—and big smiles—keep me charging ahead!</p>
+          <p>Aastha Ji, your pep talks—and big smiles—keep me moving forward!</p>
           <div class="love-meter" id="loveMeter">
             <div class="love-meter-fill" id="loveMeterFill"></div>
             <span>💖</span>
           </div>
           <p>Click to see how much I owe you!</p>
-          <button class="magic-button" id="voiceButton">Hear My Thanks!</button>
           <p>You’re my unstoppable bestie!</p>
           <img class="doodle doodle-star" src="https://img.icons8.com/doodle/96/star.png" alt="star">
         </div>
@@ -883,8 +673,8 @@
         <div class="page-content">
           <h2>My Promise</h2>
           <p>Dear Aastha Ji,</p>
-          <p>I’ll always lean on you—‘cause you’re my rock through every storm!</p>
-          <p>You make life worth battling for!</p>
+          <p>I’ll always count on you—‘cause you’re my rock through thick and thin!</p>
+          <p>You make life worth fighting for!</p>
           <img class="doodle doodle-flower" src="https://img.icons8.com/doodle/96/flower.png" alt="flower">
         </div>
         <span class="sticker" style="bottom: 90px; left: 50px;">💕</span>
@@ -894,14 +684,14 @@
       <div class="page page-8">
         <div class="page-content">
           <h2>Our Laughter</h2>
-          <p>Aastha Ji, your giggles turn my darkest days into pure gold!</p>
+          <p>Aastha Ji, your giggles turn my worst days into gold—I can’t stop smiling!</p>
           <div class="memory-card" style="transform: rotate(2deg);">
             <span>😂</span>
-            <p>Those silly moments we share are my treasure!</p>
+            <p>Those silly moments we share are everything!</p>
           </div>
           <p>Thanks for the joy, bestie!</p>
           <img class="doodle doodle-star" src="https://img.icons8.com/doodle/96/star.png" alt="star">
-          <div class="memory-ticker" id="memoryTicker">That time we laughed ‘til we cried • Pizza night marathons • Your epic pep talks • Coffee runs that saved me • Our unstoppable vibe • Thanks for being you, Aastha Ji! •</div>
+          <div class="memory-ticker">That time we laughed ‘til we cried • Pizza night marathons • Your epic pep talks •</div>
         </div>
         <span class="sticker" style="top: 40px; right: 60px;">💓</span>
       </div>
@@ -911,7 +701,7 @@
         <div class="tape" style="--rotation: 15deg; --top: 30px; --left: 60%;"></div>
         <div class="page-content">
           <h2>Food and Love</h2>
-          <p>Aastha Ji, sharing bites with you—and your giant heart—warms me up!</p>
+          <p>Aastha Ji, sharing bites with you—and your big heart—warms me up!</p>
           <div class="memory-card" style="transform: rotate(-4deg);">
             <span>🍕</span>
             <p>Those foodie nights are my fave!</p>
@@ -926,11 +716,11 @@
       <div class="page page-10">
         <div class="page-content">
           <h2>My Steady Rock</h2>
-          <p>Aastha Ji, you’re my anchor when the world spins wild!</p>
-          <p>You’ve stood by me through every tempest!</p>
+          <p>Aastha Ji, you’re my anchor when the world spins out of control!</p>
+          <p>You’ve stood by me through every storm!</p>
           <div class="memory-card" style="transform: rotate(3deg);">
             <span>🪨</span>
-            <p>You’re tougher than anyone I know!</p>
+            <p>You’re stronger than anyone I know!</p>
           </div>
           <img class="doodle doodle-flower" src="https://img.icons8.com/doodle/96/flower.png" alt="flower">
         </div>
@@ -942,22 +732,22 @@
         <div class="tape" style="--rotation: 10deg; --top: 20px; --left: 60%;"></div>
         <div class="page-content">
           <h2>Our Survival Pact</h2>
-          <p>Aastha Ji, we’ve conquered chaos together—your strength is my shield!</p>
+          <p>Aastha Ji, we’ve faced the chaos together—your strength pulls me through!</p>
           <div class="friendship-badge" id="friendshipBadge">Bestie MVP</div>
-          <p>Thanks for being my ultimate teammate!</p>
+          <p>Thanks for being my teammate!</p>
           <img class="doodle doodle-heart" src="https://img.icons8.com/doodle/96/heart.png" alt="heart">
         </div>
         <span class="sticker" style="top: 50px; left: 40px;">💓</span>
       </div>
       
-      <!-- Page 12 (Ultimate Surprise) -->
+      <!-- Page 12 -->
       <div class="page page-12">
         <div class="shine-effect"></div>
         <div class="page-content">
           <h1>My Bestie Forever</h1>
           <p>Aastha Ji, you’re my everything—my rock, my joy, my strength!</p>
           <p class="typewriter" style="font-size: 2.5em;">Thank you tons, my rock! 💖</p>
-          <button class="magic-button" id="finalSurprise">Ultimate Thanks!</button>
+          <button class="magic-button" id="finalSurprise">Biggest Thanks!</button>
         </div>
         <span class="sticker" style="top: 30px; left: 40px;">💖</span>
         <span class="sticker" style="bottom: 60px; right: 70px;">💝</span>
@@ -968,7 +758,7 @@
         <div class="shine-effect"></div>
         <div class="page-content">
           <h1>A Note for Me?</h1>
-          <p>Aastha Ji, scribble something for your goofy bestie?</p>
+          <p>Aastha Ji, wanna scribble something for your goofy bestie?</p>
           <textarea class="note-area" id="loveNote" placeholder="Write something sweet—I’m all ears! 💕"></textarea>
           <div style="display: flex; gap: 10px; margin-top: 20px;">
             <button class="magic-button" id="saveNote">Save My Note!</button>
@@ -977,7 +767,6 @@
           <div class="photo-frame" id="photoFrame">
             <input type="file" id="photoInput" accept="image/*" style="display: none;">
             <img id="uploadedPhoto" alt="Our Memory">
-            <span class="photo-caption" id="photoCaption">Our Epic Moment!</span>
           </div>
           <p class="typewriter" style="font-size: 1.8em;">You’re my world, always!</p>
         </div>
@@ -996,12 +785,6 @@
   </audio>
   <audio id="crownChime">
     <source src="https://freesound.org/data/previews/270/270312_2018099-lq.mp3" type="audio/mp3">
-  </audio>
-  <audio id="voiceMessage">
-    <source src="thank_you_aastha.mp3" type="audio/mp3">
-  </audio>
-  <audio id="badgeSound">
-    <source src="https://freesound.org/data/previews/270/270318_2018099-lq.mp3" type="audio/mp3">
   </audio>
   
   <script>
@@ -1149,23 +932,6 @@
         else if (e.key === 'ArrowLeft') prevPage();
       });
       
-      // Theme Switch
-      const themeToggle = document.getElementById('themeToggle');
-      let isDarkMode = false;
-      themeToggle.addEventListener('click', () => {
-        isDarkMode = !isDarkMode;
-        document.body.classList.toggle('dark-mode', isDarkMode);
-        themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
-        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-      });
-      
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        isDarkMode = true;
-        document.body.classList.add('dark-mode');
-        themeToggle.textContent = '☀️';
-      }
-      
       // Surprise Functions (Reduced to 20)
       function confettiBurst() {
         const page = document.querySelector('.page-1');
@@ -1195,58 +961,50 @@
       
       function finalSurprise() {
         const page = document.querySelector('.page-12');
+        const thanksMessages = [
+          'You’re my rock, Aastha Ji! 🌸',
+          'Your strength keeps me going—bestie forever! 💕',
+          'Thanks for being my solid ground! 🥰',
+          'You’re my star through every storm! 🌟',
+          'I’m so lucky to have you as my best friend! 💖'
+        ];
         const chime = document.getElementById('crownChime');
         
-        // Grand Confetti (50 this time for ultimate flair)
-        const colors = ['#ff66b2', '#ff99cc', '#ffb6c1', '#fff0f5'];
-        for (let i = 0; i < 50; i++) {
-          const confetti = document.createElement('div');
-          confetti.style.position = 'absolute';
-          confetti.style.width = '12px';
-          confetti.style.height = '12px';
-          confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-          confetti.style.left = `${Math.random() * 100}%`;
-          confetti.style.top = `${Math.random() * 100}%`;
-          confetti.style.borderRadius = '50%';
-          confetti.style.animation = 'floatUp 3s ease forwards';
-          page.appendChild(confetti);
-          setTimeout(() => confetti.remove(), 3000);
+        // Emoji Burst (Reduced to 20)
+        const emojis = ['💖', '🌸', '💝', '🌷', '🌺', '💗', '💕', '✨'];
+        for (let i = 0; i < 20; i++) {
+          const emoji = document.createElement('span');
+          emoji.classList.add('surprise-emoji');
+          emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+          emoji.style.left = `${Math.random() * 80 + 10}%`;
+          emoji.style.top = `${Math.random() * 80 + 10}%`;
+          page.appendChild(emoji);
+          setTimeout(() => emoji.remove(), 2000);
         }
         
-        // Custom Banner
-        const banner = document.createElement('span');
-        banner.classList.add('surprise-message');
-        banner.textContent = 'To Aastha Ji: The Ultimate Bestie!';
-        banner.style.left = '50%';
-        banner.style.top = '30%';
-        banner.style.transform = 'translateX(-50%)';
-        banner.style.fontSize = '2.5em';
-        page.appendChild(banner);
-        
-        // Certificate
-        const cert = document.createElement('span');
-        cert.classList.add('surprise-message');
-        cert.textContent = 'Certified: World’s Best Friend Forever!';
-        cert.style.left = '50%';
-        cert.style.top = '60%';
-        cert.style.transform = 'translateX(-50%)';
-        page.appendChild(cert);
-        
-        // Crown
+        // Love Crown
         const crown = document.createElement('span');
         crown.classList.add('love-crown');
         crown.textContent = '👑';
         page.appendChild(crown);
+        
+        // Thanks Message
+        const message = document.createElement('span');
+        message.classList.add('surprise-message');
+        message.textContent = thanksMessages[Math.floor(Math.random() * thanksMessages.length)];
+        message.style.left = '50%';
+        message.style.top = '50%';
+        message.style.transform = 'translate(-50%, -50%)';
+        page.appendChild(message);
         
         // Play Chime
         chime.play().catch(e => console.log('Chime blocked—click page first!'));
         
         // Cleanup
         setTimeout(() => {
-          banner.remove();
-          cert.remove();
           crown.remove();
-        }, 5000);
+          message.remove();
+        }, 4000);
       }
       
       // Mini-Game
@@ -1270,18 +1028,8 @@
         loveLevel = Math.min(loveLevel + 20, 100);
         document.getElementById('loveMeterFill').style.height = `${loveLevel}%`;
         if (loveLevel === 100) {
-          alert('My gratitude for you, Aastha Ji, is maxed out—you’re the ultimate bestie! 💖');
+          alert('My gratitude for you, Aastha Ji, is maxed out—you’re the best! 💖');
         }
-      });
-      
-      // Voice Message
-      const voiceButton = document.getElementById('voiceButton');
-      const voiceMessage = document.getElementById('voiceMessage');
-      voiceButton.addEventListener('click', () => {
-        voiceMessage.play().catch(e => {
-          console.error('Voice playback failed:', e);
-          alert('Add a "thank_you_aastha.mp3" file to hear my thanks!');
-        });
       });
       
       // Sticker Drop
@@ -1317,9 +1065,9 @@
       // Note Saving and Reading (Reduced to 8)
       document.getElementById('saveNote').addEventListener('click', () => {
         const note = document.getElementById('loveNote').value;
-        if (note.trim()) {
+        if (note.trim()) {  // Ensure non-empty note
           localStorage.setItem('aasthaJiNote', note);
-          alert('Aww, Aastha Ji, your note’s saved! I’ll treasure it forever—bestie love! 💕');
+          alert('Aww, Aastha Ji, your note’s saved! I’ll hold it close—bestie love! 💕');
         } else {
           alert('Please write something sweet for your goofy bestie first! 🥰');
         }
@@ -1338,6 +1086,7 @@
           message.style.display = 'block';
           page.appendChild(message);
           
+          // Add fewer hearts around the note
           for (let i = 0; i < 8; i++) {
             const heart = document.createElement('span');
             heart.classList.add('surprise-emoji');
@@ -1364,7 +1113,6 @@
       const photoFrame = document.getElementById('photoFrame');
       const photoInput = document.getElementById('photoInput');
       const uploadedPhoto = document.getElementById('uploadedPhoto');
-      const photoCaption = document.getElementById('photoCaption');
       
       photoFrame.addEventListener('click', () => {
         photoInput.click();
@@ -1377,7 +1125,6 @@
           reader.onload = (event) => {
             uploadedPhoto.src = event.target.result;
             uploadedPhoto.style.display = 'block';
-            photoCaption.style.display = 'block';
             photoFrame.style.background = 'transparent';
             photoFrame.querySelector('::before').style.display = 'none';
             localStorage.setItem('friendshipPhoto', event.target.result);
@@ -1391,20 +1138,16 @@
       if (savedPhoto) {
         uploadedPhoto.src = savedPhoto;
         uploadedPhoto.style.display = 'block';
-        photoCaption.style.display = 'block';
         photoFrame.style.background = 'transparent';
         photoFrame.querySelector('::before').style.display = 'none';
       }
       
       // Friendship Badge
-      const badge = document.getElementById('friendshipBadge');
-      const badgeSound = document.getElementById('badgeSound');
-      badge.addEventListener('click', () => {
-        badge.classList.add('awarded');
+      document.getElementById('friendshipBadge').addEventListener('click', () => {
         const page = document.querySelector('.page-11');
         const message = document.createElement('span');
         message.classList.add('surprise-message');
-        message.textContent = 'Aastha Ji: Bestie Hall of Fame!';
+        message.textContent = 'Awarded to Aastha Ji for being the Best Bestie Ever!';
         message.style.left = '50%';
         message.style.top = '50%';
         message.style.transform = 'translate(-50%, -50%)';
@@ -1420,14 +1163,7 @@
           setTimeout(() => star.remove(), 2000);
         }
         
-        badgeSound.play().catch(e => console.log('Badge sound blocked—click page first!'));
         setTimeout(() => message.remove(), 3000);
-      });
-      
-      // Memory Ticker
-      const ticker = document.getElementById('memoryTicker');
-      ticker.addEventListener('click', () => {
-        ticker.classList.toggle('paused');
       });
       
       // Button Event Listeners
