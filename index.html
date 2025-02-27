@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For My Dearest Aastha Ji</title>
+  <title>For Aastha Ji</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Patrick+Hand&display=swap');
     
@@ -31,6 +31,7 @@
       color: #ff99cc;
       opacity: 0.5;
       animation: float 10s infinite ease-in-out;
+      z-index: 5; /* Below text */
     }
     
     @keyframes float {
@@ -150,6 +151,7 @@
       background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10zm20 20c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm-40 20c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5 5zm20-40c2.209 0 4 1.791 4 4s-1.791 4-4 4-4-1.791-4-4 1.791-4 4-4z' fill='%23ffb6c1' fill-opacity='0.2'/%3E%3C/svg%3E");
       opacity: 0.4;
       pointer-events: none;
+      z-index: 5; /* Below text */
     }
     
     .page-1 { z-index: 13; background: linear-gradient(135deg, #ffe6ee, #fff0f5); }
@@ -173,7 +175,7 @@
     .page-content {
       max-width: 85%;
       position: relative;
-      z-index: 5;
+      z-index: 10; /* Above emojis */
     }
     
     h1, h2, h3 {
@@ -222,6 +224,7 @@
       right: 30px;
       display: flex;
       gap: 20px;
+      z-index: 10; /* Above emojis */
     }
     
     .nav-button {
@@ -248,17 +251,17 @@
     .sticker {
       position: absolute;
       pointer-events: none;
-      z-index: 10;
+      z-index: 5; /* Below text */
       animation: bounce 2s ease-in-out infinite;
-      font-size: 40px;
+      font-size: 30px; /* Smaller */
     }
     
     .temp-sticker {
       position: absolute;
-      font-size: 30px;
+      font-size: 25px;
       animation: fadeOut 2s ease forwards;
       pointer-events: none;
-      z-index: 12;
+      z-index: 5; /* Below text */
     }
     
     @keyframes fadeOut {
@@ -268,7 +271,7 @@
     
     @keyframes bounce {
       0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-15px) rotate(5deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
     }
     
     .memory-card {
@@ -282,6 +285,7 @@
       max-width: 70%;
       transition: all 0.3s ease;
       text-align: center;
+      z-index: 10; /* Above emojis */
     }
     
     .memory-card:hover {
@@ -303,13 +307,13 @@
       transform: rotate(var(--rotation));
       top: var(--top);
       left: var(--left);
-      z-index: 3;
+      z-index: 5; /* Below text */
       border-radius: 5px;
     }
     
     .doodle {
       position: absolute;
-      z-index: 1;
+      z-index: 5; /* Below text */
       opacity: 0.6;
       animation: sway 3s ease-in-out infinite;
     }
@@ -331,7 +335,7 @@
       height: 100%;
       background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 60%);
       pointer-events: none;
-      z-index: 4;
+      z-index: 5; /* Below text */
       animation: shimmer 4s infinite;
     }
     
@@ -343,10 +347,10 @@
     
     .surprise-emoji {
       position: absolute;
-      font-size: 30px;
+      font-size: 25px;
       animation: floatUp 2s ease forwards;
       pointer-events: none;
-      z-index: 2;
+      z-index: 5; /* Below text */
     }
     
     @keyframes floatUp {
@@ -365,6 +369,7 @@
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
       transition: all 0.3s ease;
+      z-index: 10; /* Above emojis */
     }
     
     .magic-button:hover {
@@ -381,7 +386,7 @@
       font-size: 1.8em;
       display: none;
       animation: popIn 0.5s ease;
-      z-index: 6;
+      z-index: 10; /* Above emojis */
     }
     
     @keyframes popIn {
@@ -398,7 +403,7 @@
       color: #ff66b2;
       text-shadow: 0 0 10px #ff99cc;
       animation: crownGlow 2s ease infinite;
-      z-index: 3;
+      z-index: 5; /* Below text */
     }
     
     @keyframes crownGlow {
@@ -410,7 +415,7 @@
       position: absolute;
       font-size: 20px;
       pointer-events: none;
-      z-index: 2;
+      z-index: 5; /* Below text */
       animation: fadeTrail 1s ease forwards;
     }
     
@@ -429,6 +434,7 @@
       cursor: pointer;
       overflow: hidden;
       margin: 20px auto;
+      z-index: 10; /* Above emojis */
     }
     
     .love-meter-fill {
@@ -447,7 +453,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 40px;
-      z-index: 2;
+      z-index: 11; /* Above fill and emojis */
     }
     
     .note-area {
@@ -462,6 +468,7 @@
       color: #ff528b;
       resize: none;
       box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+      z-index: 10; /* Above emojis */
     }
     
     .note-area:focus {
@@ -481,6 +488,7 @@
       overflow: hidden;
       position: relative;
       transition: transform 0.3s ease;
+      z-index: 10; /* Above emojis */
     }
     
     .photo-frame:hover {
@@ -504,6 +512,7 @@
       font-size: 1.5em;
       color: #ff66b2;
       text-align: center;
+      z-index: 11; /* Above frame content */
     }
     
     .friendship-badge {
@@ -521,6 +530,7 @@
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
       transition: transform 0.3s ease;
+      z-index: 10; /* Above emojis */
     }
     
     .friendship-badge:hover {
@@ -537,6 +547,7 @@
       font-size: 1.2em;
       color: #ff528b;
       animation: ticker 15s linear infinite;
+      z-index: 10; /* Above emojis */
     }
     
     @keyframes ticker {
@@ -553,6 +564,7 @@
       .photo-frame { width: 150px; height: 100px; }
       .friendship-badge { width: 80px; height: 80px; font-size: 1.5em; }
       .memory-ticker { font-size: 1em; }
+      .love-meter { width: 80px; height: 80px; }
     }
   </style>
 </head>
@@ -582,17 +594,17 @@
       <div class="page page-1">
         <div class="shine-effect"></div>
         <div class="page-content">
-          <h1 class="typewriter">My Dearest Aastha Ji!</h1>
-          <p>A little scrapbook from your bestie—‘cause you’re my rock!</p>
+          <h1 class="typewriter">For Aastha Ji!</h1>
+          <p>A little scrapbook from your bestie—‘cause you’re the greatest treasure this world can find</p>
           <div class="memory-card">
             <span>💖</span>
-            <p>You’ve been there when my world flipped upside down!</p>
+            <p>You’ve been there when the whole world turned against me how crazy is that!</p>
           </div>
-          <button class="magic-button" id="magicSurprise">Sweet Surprise!</button>
-          <p>(Flip for more thanks—click for stickers!)</p>
+          <button class="magic-button" id="magicSurprise">Ummmmm Try Clicking It!</button>
+          <p>(Flip for more thanks—click edges for stickers!)</p>
         </div>
-        <span class="sticker" style="top: 20px; right: 30px;">💕</span>
-        <span class="sticker" style="bottom: 50px; left: 40px;">🌸</span>
+        <span class="sticker" style="top: 10px; right: 10px;">💕</span>
+        <span class="sticker" style="bottom: 10px; left: 10px;">🌸</span>
       </div>
       
       <!-- Page 2 -->
@@ -605,7 +617,7 @@
           <p>Thanks for being my unbreakable bestie!</p>
           <img class="doodle doodle-heart" src="https://img.icons8.com/doodle/96/heart.png" alt="heart">
         </div>
-        <span class="sticker" style="top: 80px; right: 50px;">💗</span>
+        <span class="sticker" style="top: 10px; right: 10px;">💗</span>
       </div>
       
       <!-- Page 3 -->
@@ -617,10 +629,10 @@
             <span>🌟</span>
             <p>You said “We’ve got this!” and dragged me out of the dark—my hero!</p>
           </div>
-          <p>You’re my strength, Aastha Ji!</p>
+          <p>You were, You are, And you'll always be my strength, Aastha Ji!</p>
           <img class="doodle doodle-star" src="https://img.icons8.com/doodle/96/star.png" alt="star">
         </div>
-        <span class="sticker" style="bottom: 80px; right: 60px;">🌺</span>
+        <span class="sticker" style="bottom: 10px; right: 10px;">🌺</span>
       </div>
       
       <!-- Page 4 -->
@@ -633,7 +645,7 @@
           <img class="doodle doodle-flower" src="https://img.icons8.com/doodle/96/flower.png" alt="flower">
           <span class="surprise-message" id="secretMessage" style="top: 20%; left: 50%; transform: translateX(-50%);">Psst... you’re my rock of strength! ✨</span>
         </div>
-        <span class="sticker" style="top: 50px; left: 40px;">💓</span>
+        <span class="sticker" style="top: 10px; left: 10px;">💓</span>
       </div>
       
       <!-- Page 5 (Mini-Game) -->
@@ -648,7 +660,7 @@
           </div>
           <button class="magic-button" id="guessButton">Guess!</button>
         </div>
-        <span class="sticker" style="top: 140px; left: 30px;">💝</span>
+        <span class="sticker" style="top: 10px; left: 10px;">💝</span>
       </div>
       
       <!-- Page 6 (Love Meter) -->
@@ -664,7 +676,7 @@
           <p>You’re my unstoppable bestie!</p>
           <img class="doodle doodle-star" src="https://img.icons8.com/doodle/96/star.png" alt="star">
         </div>
-        <span class="sticker" style="top: 70px; right: 40px;">🌷</span>
+        <span class="sticker" style="top: 10px; right: 10px;">🌷</span>
       </div>
       
       <!-- Page 7 -->
@@ -677,7 +689,7 @@
           <p>You make life worth fighting for!</p>
           <img class="doodle doodle-flower" src="https://img.icons8.com/doodle/96/flower.png" alt="flower">
         </div>
-        <span class="sticker" style="bottom: 90px; left: 50px;">💕</span>
+        <span class="sticker" style="bottom: 10px; left: 10px;">💕</span>
       </div>
       
       <!-- Page 8 (Memory Ticker) -->
@@ -693,7 +705,7 @@
           <img class="doodle doodle-star" src="https://img.icons8.com/doodle/96/star.png" alt="star">
           <div class="memory-ticker">That time we laughed ‘til we cried • Pizza night marathons • Your epic pep talks •</div>
         </div>
-        <span class="sticker" style="top: 40px; right: 60px;">💓</span>
+        <span class="sticker" style="top: 10px; right: 10px;">💓</span>
       </div>
       
       <!-- Page 9 -->
@@ -704,12 +716,12 @@
           <p>Aastha Ji, sharing bites with you—and your big heart—warms me up!</p>
           <div class="memory-card" style="transform: rotate(-4deg);">
             <span>🍕</span>
-            <p>Those foodie nights are my fave!</p>
+            <p>Those lunch sharing sessions are my fave!</p>
           </div>
           <p>You’re my tasty comfort!</p>
           <img class="doodle doodle-heart" src="https://img.icons8.com/doodle/96/heart.png" alt="heart">
         </div>
-        <span class="sticker" style="bottom: 80px; left: 40px;">💝</span>
+        <span class="sticker" style="bottom: 10px; left: 10px;">💝</span>
       </div>
       
       <!-- Page 10 -->
@@ -720,11 +732,11 @@
           <p>You’ve stood by me through every storm!</p>
           <div class="memory-card" style="transform: rotate(3deg);">
             <span>🪨</span>
-            <p>You’re stronger than anyone I know!</p>
+            <p>You’re wayyyyyyyyyyyyyyyyyyyyyy stronger than anyone I know!</p>
           </div>
           <img class="doodle doodle-flower" src="https://img.icons8.com/doodle/96/flower.png" alt="flower">
         </div>
-        <span class="sticker" style="top: 60px; right: 50px;">💗</span>
+        <span class="sticker" style="top: 10px; right: 10px;">💗</span>
       </div>
       
       <!-- Page 11 (Friendship Badge) -->
@@ -737,7 +749,7 @@
           <p>Thanks for being my teammate!</p>
           <img class="doodle doodle-heart" src="https://img.icons8.com/doodle/96/heart.png" alt="heart">
         </div>
-        <span class="sticker" style="top: 50px; left: 40px;">💓</span>
+        <span class="sticker" style="top: 10px; left: 10px;">💓</span>
       </div>
       
       <!-- Page 12 -->
@@ -747,10 +759,10 @@
           <h1>My Bestie Forever</h1>
           <p>Aastha Ji, you’re my everything—my rock, my joy, my strength!</p>
           <p class="typewriter" style="font-size: 2.5em;">Thank you tons, my rock! 💖</p>
-          <button class="magic-button" id="finalSurprise">Biggest Thanks!</button>
+          <button class="magic-button" id="finalSurprise">Finally!</button>
         </div>
-        <span class="sticker" style="top: 30px; left: 40px;">💖</span>
-        <span class="sticker" style="bottom: 60px; right: 70px;">💝</span>
+        <span class="sticker" style="top: 10px; left: 10px;">💖</span>
+        <span class="sticker" style="bottom: 10px; right: 10px;">💝</span>
       </div>
       
       <!-- Page 13 (Note Section + Photo Frame) -->
@@ -770,7 +782,7 @@
           </div>
           <p class="typewriter" style="font-size: 1.8em;">You’re my world, always!</p>
         </div>
-        <span class="sticker" style="top: 20px; left: 30px;">💓</span>
+        <span class="sticker" style="top: 10px; left: 10px;">💓</span>
       </div>
     </div>
     
@@ -797,19 +809,20 @@
       
       prevButton.style.display = 'none';
       
-      // Floating Hearts Background (Reduced to 5)
+      // Floating Hearts Background (Reduced to 5, edge-only)
       function addFloatingHearts() {
         for (let i = 0; i < 5; i++) {
           const heart = document.createElement('span');
           heart.classList.add('floating-heart');
           heart.textContent = '💖';
-          heart.style.left = `${Math.random() * 100}%`;
+          const isLeft = Math.random() < 0.5;
+          heart.style.left = isLeft ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
           heart.style.animationDelay = `${Math.random() * 5}s`;
           document.body.appendChild(heart);
         }
       }
       
-      // Random Stickers (Reduced to 15)
+      // Random Stickers (Reduced to 15, edge-only)
       function addRandomStickers() {
         const container = document.querySelector('.book-container');
         const stickers = ['💖', '🌸', '💝', '🌷', '🌺', '💗', '💕', '✨', '💓'];
@@ -818,8 +831,14 @@
           const sticker = document.createElement('span');
           sticker.classList.add('sticker');
           sticker.textContent = stickers[Math.floor(Math.random() * stickers.length)];
-          sticker.style.left = Math.random() * 100 + '%';
-          sticker.style.top = Math.random() * 100 + '%';
+          const isVertical = Math.random() < 0.5;
+          if (isVertical) {
+            sticker.style.top = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+            sticker.style.left = `${Math.random() * 100}%`;
+          } else {
+            sticker.style.left = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+            sticker.style.top = `${Math.random() * 100}%`;
+          }
           sticker.style.animationDelay = Math.random() * 3 + 's';
           container.appendChild(sticker);
         }
@@ -932,7 +951,7 @@
         else if (e.key === 'ArrowLeft') prevPage();
       });
       
-      // Surprise Functions (Reduced to 20)
+      // Surprise Functions (Confetti to edges)
       function confettiBurst() {
         const page = document.querySelector('.page-1');
         const colors = ['#ff66b2', '#ff99cc', '#ffb6c1', '#fff0f5'];
@@ -942,10 +961,12 @@
           confetti.style.width = '12px';
           confetti.style.height = '12px';
           confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-          confetti.style.left = `${Math.random() * 80 + 10}%`;
-          confetti.style.top = `${Math.random() * 80 + 10}%`;
+          const isLeft = Math.random() < 0.5;
+          confetti.style.left = isLeft ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+          confetti.style.top = `${Math.random() * 100}%`;
           confetti.style.borderRadius = '50%';
           confetti.style.animation = 'floatUp 2s ease forwards';
+          confetti.style.zIndex = '5'; /* Below text */
           page.appendChild(confetti);
           setTimeout(() => confetti.remove(), 2000);
         }
@@ -970,14 +991,20 @@
         ];
         const chime = document.getElementById('crownChime');
         
-        // Emoji Burst (Reduced to 20)
+        // Emoji Burst (20, edge-only)
         const emojis = ['💖', '🌸', '💝', '🌷', '🌺', '💗', '💕', '✨'];
         for (let i = 0; i < 20; i++) {
           const emoji = document.createElement('span');
           emoji.classList.add('surprise-emoji');
           emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-          emoji.style.left = `${Math.random() * 80 + 10}%`;
-          emoji.style.top = `${Math.random() * 80 + 10}%`;
+          const isVertical = Math.random() < 0.5;
+          if (isVertical) {
+            emoji.style.top = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+            emoji.style.left = `${Math.random() * 100}%`;
+          } else {
+            emoji.style.left = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+            emoji.style.top = `${Math.random() * 100}%`;
+          }
           page.appendChild(emoji);
           setTimeout(() => emoji.remove(), 2000);
         }
@@ -1032,24 +1059,33 @@
         }
       });
       
-      // Sticker Drop
+      // Sticker Drop (Edge-only)
       document.querySelectorAll('.page').forEach(page => {
         page.addEventListener('click', (e) => {
-          const stickers = ['💖', '🌸', '💝', '🌷', '🌺', '💗', '💕', '✨'];
-          const sticker = document.createElement('span');
-          sticker.classList.add('temp-sticker');
-          sticker.textContent = stickers[Math.floor(Math.random() * stickers.length)];
-          sticker.style.left = `${e.offsetX}px`;
-          sticker.style.top = `${e.offsetY}px`;
-          page.appendChild(sticker);
-          setTimeout(() => sticker.remove(), 2000);
+          const rect = page.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const width = rect.width;
+          const height = rect.height;
+          
+          // Only allow stickers near edges (20% from edges)
+          if (x < width * 0.2 || x > width * 0.8 || y < height * 0.2 || y > height * 0.8) {
+            const stickers = ['💖', '🌸', '💝', '🌷', '🌺', '💗', '💕', '✨'];
+            const sticker = document.createElement('span');
+            sticker.classList.add('temp-sticker');
+            sticker.textContent = stickers[Math.floor(Math.random() * stickers.length)];
+            sticker.style.left = `${x}px`;
+            sticker.style.top = `${y}px`;
+            page.appendChild(sticker);
+            setTimeout(() => sticker.remove(), 2000);
+          }
         });
       });
       
-      // Cursor Trail (Less Frequent)
+      // Cursor Trail (Less Frequent, below text)
       let lastX = 0, lastY = 0;
       document.addEventListener('mousemove', (e) => {
-        if (Math.abs(e.pageX - lastX) > 50 || Math.abs(e.pageY - lastY) > 50) {
+        if (Math.abs(e.pageX - lastX) > 100 || Math.abs(e.pageY - lastY) > 100) {
           const trail = document.createElement('span');
           trail.classList.add('cursor-emoji');
           trail.textContent = '💖';
@@ -1062,10 +1098,10 @@
         }
       });
       
-      // Note Saving and Reading (Reduced to 8)
+      // Note Saving and Reading (Hearts to edges)
       document.getElementById('saveNote').addEventListener('click', () => {
         const note = document.getElementById('loveNote').value;
-        if (note.trim()) {  // Ensure non-empty note
+        if (note.trim()) {
           localStorage.setItem('aasthaJiNote', note);
           alert('Aww, Aastha Ji, your note’s saved! I’ll hold it close—bestie love! 💕');
         } else {
@@ -1086,13 +1122,18 @@
           message.style.display = 'block';
           page.appendChild(message);
           
-          // Add fewer hearts around the note
           for (let i = 0; i < 8; i++) {
             const heart = document.createElement('span');
             heart.classList.add('surprise-emoji');
             heart.textContent = '💖';
-            heart.style.left = `${Math.random() * 80 + 10}%`;
-            heart.style.top = `${Math.random() * 80 + 10}%`;
+            const isVertical = Math.random() < 0.5;
+            if (isVertical) {
+              heart.style.top = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+              heart.style.left = `${Math.random() * 100}%`;
+            } else {
+              heart.style.left = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+              heart.style.top = `${Math.random() * 100}%`;
+            }
             page.appendChild(heart);
             setTimeout(() => heart.remove(), 2000);
           }
@@ -1142,7 +1183,7 @@
         photoFrame.querySelector('::before').style.display = 'none';
       }
       
-      // Friendship Badge
+      // Friendship Badge (Stars to edges)
       document.getElementById('friendshipBadge').addEventListener('click', () => {
         const page = document.querySelector('.page-11');
         const message = document.createElement('span');
@@ -1157,8 +1198,14 @@
           const star = document.createElement('span');
           star.classList.add('surprise-emoji');
           star.textContent = '⭐';
-          star.style.left = `${Math.random() * 80 + 10}%`;
-          star.style.top = `${Math.random() * 80 + 10}%`;
+          const isVertical = Math.random() < 0.5;
+          if (isVertical) {
+            star.style.top = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+            star.style.left = `${Math.random() * 100}%`;
+          } else {
+            star.style.left = Math.random() < 0.5 ? `${Math.random() * 20}%` : `${80 + Math.random() * 20}%`;
+            star.style.top = `${Math.random() * 100}%`;
+          }
           page.appendChild(star);
           setTimeout(() => star.remove(), 2000);
         }
